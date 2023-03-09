@@ -1,0 +1,155 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    font-size: 62.5%;
+}
+
+.hide {
+    display: none;
+}
+
+body {
+    background: linear-gradient(45deg, #190361 0%, #BB00FF 100%);
+    font-size: 1.5rem;
+
+    display: grid;
+    place-items: center;
+    height: 100vh;
+}
+
+.box1 {
+    background-color: #FFFFFF;
+    padding: 4.8rem 6.4rem 6.4rem 6.4rem;
+    box-shadow: 0 2.0rem 5.0rem rgba(0, 0, 0, 0.8);
+    border-radius: 0.5rem;
+    text-align: center;
+}
+
+h1 {
+    font-family: 'Montserrat', sans-serif;
+    color: #34355B;
+    font-size: 2.4rem;
+    line-height: 2.9rem;    
+    margin-bottom: 1.4rem;
+    text-align: center;
+}
+
+h2 {
+    font-family: 'Dancing Script', cursive;
+    font-size: 2.4rem;
+    line-height: 2.9rem;
+    font-weight: 400;
+    width: 29.3rem;
+    background: #E4EDF1;
+    box-shadow: 2px 2px 2px rgba(85, 85, 85, 0.5);
+    text-align: center;
+    padding: 1rem;
+
+}
+
+p {
+    font-family: 'DM Sans', sans-serif;
+    color: #34355B;
+    line-height: 2.0rem;
+    margin-bottom: 2.0rem;
+}
+
+#closedCookie {
+    width: 30rem;
+    margin-bottom: 6.4rem;
+}
+
+#closedCookie:hover {
+    animation-name: vibrate-fast;
+        animation-duration: 0.4s;
+        animation-timing-function: linear;
+		animation-delay: 0s;
+		animation-iteration-count: infinite;
+		animation-direction: normal;
+		animation-fill-mode: none;
+    cursor: pointer;
+}
+
+.box2 {
+    background-color: #FFFFFF;
+    box-shadow: 0 2.0rem 5.0rem rgba(0, 0, 0, 0.8);
+    border-radius: 0.5rem;
+    padding: 4.8rem 6.4rem;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+button {
+    font-family: 'DM Sans', sans-serif;
+    line-height: 2rem;
+    font-weight: 700;
+    background: #FF9500;
+    border-radius: 4px;
+    border: none;
+    width: 174px;
+    height: 52px;
+    color: #ffffff;
+}
+
+button:hover {
+    cursor: pointer;
+    background-color: #81571c;
+}
+
+.box2 img {
+    padding: 1.7rem;
+}
+
+@keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
+
+@keyframes vibrate-fast {
+			
+    0% {
+        transform:translate(0);
+    }
+    10% {
+        transform:translate(-2px,-2px);
+    }
+    20% {
+        transform:translate(2px,-2px);
+    }
+    30% {
+        transform:translate(-2px,2px);
+    }
+    40% {
+        transform:translate(2px,2px);
+    }
+    50% {
+        transform:translate(-2px,-2px);
+    }
+    60% {
+        transform:translate(2px,-2px);
+    }
+    70% {
+        transform:translate(-2px,2px);
+    }
+    80% {
+        transform:translate(-2px,-2px);
+    }
+    90% {
+        transform:translate(2px,-2px);
+    }
+    100% {
+        transform:translate(0);
+    }
+}
